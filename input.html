@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun</title>
+    <style>
+        input {
+            margin: 10px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type='submit'] {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Daftar Akun</h1>
+    <form>
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" name="nama" id="nama" required>
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required>
+        
+        <label>Jenis Kelamin</label>
+        <input type="radio" name="jenis_kelamin" id="laki-laki" value="laki-laki"> Laki-laki
+        <input type="radio" name="jenis_kelamin" id="perempuan" value="perempuan">Perempuan
+        
+        <label for="hobi">Hobi</label>
+        <input type="checkbox" name="hobi" id="hobi" value="membaca"> Membaca
+        <input type="checkbox" name="hobi" id="hobi" value="olahraga"> Olahraga
+        
+        <input type="submit" name="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
