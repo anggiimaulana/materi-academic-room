@@ -84,10 +84,3 @@ h3 {
     font-size: 1em;
     color: #333;
 }
-
-@media screen and (max-width: 576px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        font-size: 15px;
-    }
-}
