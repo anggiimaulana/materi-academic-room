@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Polindra</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        h3 {
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Membuat empat kolom dengan lebar yang sama */
+            gap: 10px; /* Jarak antar item grid */
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .grid-item {
+            display: flex; /* Menggunakan Flexbox */
+            flex-direction: column; /* Menyusun gambar dan teks secara vertikal */
+            align-items: center; /* Mengatur konten di tengah */
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .grid-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .grid-item p {
+            margin: 0;
+            font-size: 1em;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Responsive untuk layar kecil */
+        /* @media screen and (max-width: 576px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+                font-size: 15px;
+            }
+        } */
+    </style>
+    <link rel="icon" href="wp7175727.png" type="image/x-icon">
+</head>
+<body>
+    <h3>Laboratorium Teknik Informatika Polindra</h3>
+    <hr>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="../../wp7175727.jpg" alt="Lab Jaringan Komputer">
+            <p>Lab. Jaringan Komputer dan Pemrograman</p>
+        </div>
+        <div class="grid-item">
+            <img src="../../wp7175727.jpg" alt="Lab Sistem Operasi">
+            <p>Lab. Sistem Operasi</p>
+        </div>
+        <div class="grid-item">
+            <img src="../../wp7175727.jpg" alt="Lab Multimedia">
+            <p>Lab. Multimedia</p>
+        </div>
+        <div class="grid-item">
+            <img src="../../wp7175727.jpg" alt="Lab Pemrograman">
+            <p>Lab. Pemrograman</p>
+        </div>
+    </div>
+</body>
+</html>

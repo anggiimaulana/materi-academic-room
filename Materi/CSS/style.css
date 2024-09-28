@@ -14,13 +14,80 @@ body {
     padding: 20px;
     color: #fff;
     text-decoration: none;
+    margin: 10px;
+    border: 2px solid #ccc;
 }
 
 .navbar a:hover {
     color: #ff0b0b;
     background-color: #fff;
+    border: 2px solid #ccc;
 }
 
 .navbar a:active {
     color: black;
+}
+
+/* Flexbox */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: blue;
+    padding: 5px;
+}
+
+.flex-item {
+    flex: 1 1 20%; /* Item menempati 15% dari lebar container */
+    margin: 10px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* GRID CSS */
+h3 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Empat kolom dengan lebar yang sama */
+    gap: 10px; /* Jarak antara item grid */
+    padding: 20px;
+    font-size: 18px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.grid-item p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+@media screen and (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        font-size: 15px;
+    }
 }
