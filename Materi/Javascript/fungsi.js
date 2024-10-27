@@ -1,8 +1,4 @@
-var dataBarang = [
-    "Buku Tulis",
-    "Pensil",
-    "Spidol"
-];
+var dataBarang = [];
 
 function showBarang(){
     var listBarang = document.getElementById("list-barang");
@@ -16,21 +12,26 @@ function showBarang(){
         
         listBarang.innerHTML += "<li>" + dataBarang[i] + " ["+ btnEdit +" | "+ btnHapus +"]</li>";
     }
+
+    console.log(listBarang);
 }
 
 function addBarang(){
     var input = document.querySelector("input[name=barang]");
     dataBarang.push(input.value);
     showBarang();
+    console.log(dataBarang)
 }
 
 function editBarang(id){
     var newBarang = prompt("Nama baru", dataBarang[id]);
     dataBarang[id] = newBarang;
     showBarang();
+    console.log(dataBarang)
 }
 
 function deleteBarang(id){
     dataBarang.splice(id, 1);
     showBarang();
+    console.log(dataBarang)
 }

@@ -2,8 +2,7 @@
 <html>
 <head>
     <title>Kalkulator Penjumlahan</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <style>
+    <!-- <style>
         body {
             background-color: #f4f4f4;
             font-family: Arial, sans-serif;
@@ -45,6 +44,7 @@
             padding: 10px;
             border-radius: 5px;
             cursor: pointer;
+            color: #fff;
         }
 
         button:hover {
@@ -57,7 +57,7 @@
             color: #333;
             margin-top: 20px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <div class="container">
@@ -78,7 +78,7 @@
         function penjumlahan() {
             var nilai_a = document.getElementById("input_nilai_a").value;
             var nilai_b = document.getElementById("input_nilai_b").value;
-            var hasil_penjumlahan = parseInt(nilai_a) + parseInt(nilai_b);
+            var hasil_penjumlahan = parseInt(nilai_a) * parseInt(nilai_b);
             if (isNaN(hasil_penjumlahan)) {
                 hasil_penjumlahan = 0;
             }

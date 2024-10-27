@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <!-- inline js -->
+    <button id="myButton">Klik Saya</button>
+    <button onclick="showMessage()">Klik Saya</button>
+    <button onclick="alert('Hello! from Inline JavaScript!')">Klik Saya</button>
+
+    <!-- eksternal js -->
+    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+    <!-- internal js -->
+    <script>
+        // function showMessage() {
+        //     swal({
+        //         title: "Good job!",
+        //         text: "You clicked the button!",
+        //         icon: "error",
+        //         button: "Aww yiss!",
+        //     });
+        // }
+
+        let nama = prompt("Masukan nama anda: ");
+        let umur = prompt("Masukan umur anda: ");
+
+        switch (umur){
+            case umur >= 18:
+                document.write(`${nama}, anda sudah dewasa`);
+                break;
+            case umur > 13:
+                document.write(`${nama}, anda sudah remaja`);
+                break;
+            default:
+                document.write(`${nama}, anda masih anak-anak`);
+        }
+
+        if (umur >= 18) {
+            document.write(`${nama}, anda sudah dewasa`);
+        } else if (umur > 13) {
+            document.write(`${nama}, anda sudah remaja`);
+        } else {
+            document.write(`${nama}, anda masih anak-anak`);
+        }
+    </script>
+</body>
+</html>

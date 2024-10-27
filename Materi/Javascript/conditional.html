@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional</title>
+</head>
+<body>
+    <script>
+        // if
+        // let nilai = prompt("Masukan nilai anda: ");
+
+        // if (nilai > 80) {
+        //     document.write("Nilai anda: A");
+        // }
+
+        // document.write("<br>" + "Terim kasih!");
+    </script>
+
+    <script>
+        // if-else
+        // let nilai = prompt("Masukan nilai anda: ");
+
+        // if (nilai > 80) {
+        //     document.write("Anda lulus!");
+        // } else {
+        //     document.write("Anda tidak lulus");
+        // }
+
+        // document.write("<br>" + "Terim kasih!");
+    </script>
+
+    <script>
+        // if-else if-else
+        // let nilai = prompt("Masukan nilai anda: ");
+
+        // if (nilai > 80) {
+        //     document.write("Nilai anda: A");
+        // } else if (nilai > 75) {
+        //     document.write("Nilai anda: AB");    
+        // } else if (nilai > 70) {
+        //     document.write("Nilai anda: B");
+        // } else if (nilai > 65) {
+        //     document.write("Nilai anda: BC");
+        // } else if (nilai > 60) {
+        //     document.write("Nilai anda: C");
+        // } else if (nilai > 55) {
+        //     document.write("Nilai anda: CD");
+        // } else if (nilai > 50) {
+        //     document.write("Nilai anda: D");
+        // } else {
+        //     document.write("Nilai anda: E");
+        // }
+
+        // document.write("<br>" + "Terim kasih!");
+    </script>
+
+    <script>
+        // switch-case
+        // let nilai = prompt("Masukan nilai anda: ");
+        // nilai = parseInt(nilai);
+
+        // switch (true) {
+        //     case (nilai > 80):
+        //         document.write("Nilai anda: A");
+        //         break;
+        //     case (nilai > 75):
+        //         document.write("Nilai anda: AB");
+        //         break;
+        //     case (nilai > 70):
+        //         document.write("Nilai anda: B");
+        //         break;
+        //     default:
+        //         document.write("Nilai anda: D");
+        //         break;
+        // }
+    </script>
+
+    <script>
+        // let password = prompt("Masukan password: ");
+        // let validation = (parseInt(password) === 123) ? "Password Benar" : "Password Salah!";
+        // document.write(validation)
+    </script>
+
+    <script>
+        let role = prompt("Masukkan role Anda (admin/user):");
+        let password = prompt("Masukkan password Anda:");
+
+        if (password === "12345" || "anggii") {  // Memeriksa apakah password benar
+            // Jika password benar, cek role pengguna
+            if (role === "admin") {
+                document.write("Selamat datang, Admin!");
+            } else if (role === "user") {
+                document.write("Selamat datang, Pengguna!");
+            } else {
+                document.write("Role tidak dikenali.");
+            }
+        } else {
+            // Jika password salah
+            document.write("Password Salah!");
+        }
+
+    </script>
+
+</body>
+</html>
