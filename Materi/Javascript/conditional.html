@@ -7,18 +7,19 @@
 </head>
 <body>
     <script>
-        // if
-        // let nilai = prompt("Masukan nilai anda: ");
+        // // if statement
 
-        // if (nilai > 80) {
-        //     document.write("Nilai anda: A");
+        // let belanja = prompt("Masukan jumlah belanjaan anda: ");
+
+        // if (belanja > 80000) {
+        //     document.write("Selamat anda mendapatkan diskon 10%");
         // }
 
-        // document.write("<br>" + "Terim kasih!");
+        // document.write("<br>" + "Terim kasih telah berbelanja disini!");
     </script>
 
     <script>
-        // if-else
+        // // if-else statement
         // let nilai = prompt("Masukan nilai anda: ");
 
         // if (nilai > 80) {
@@ -31,22 +32,16 @@
     </script>
 
     <script>
-        // if-else if-else
+        // // if-else if-else
         // let nilai = prompt("Masukan nilai anda: ");
 
         // if (nilai > 80) {
         //     document.write("Nilai anda: A");
-        // } else if (nilai > 75) {
-        //     document.write("Nilai anda: AB");    
-        // } else if (nilai > 70) {
+        // }  else if (nilai > 70) {
         //     document.write("Nilai anda: B");
-        // } else if (nilai > 65) {
-        //     document.write("Nilai anda: BC");
         // } else if (nilai > 60) {
         //     document.write("Nilai anda: C");
-        // } else if (nilai > 55) {
-        //     document.write("Nilai anda: CD");
-        // } else if (nilai > 50) {
+        // }  else if (nilai > 50) {
         //     document.write("Nilai anda: D");
         // } else {
         //     document.write("Nilai anda: E");
@@ -56,7 +51,7 @@
     </script>
 
     <script>
-        // switch-case
+        // // switch-case statement
         // let nilai = prompt("Masukan nilai anda: ");
         // nilai = parseInt(nilai);
 
@@ -64,41 +59,48 @@
         //     case (nilai > 80):
         //         document.write("Nilai anda: A");
         //         break;
-        //     case (nilai > 75):
-        //         document.write("Nilai anda: AB");
-        //         break;
         //     case (nilai > 70):
         //         document.write("Nilai anda: B");
+        //         break;
+        //     case (nilai > 60):
+        //         document.write("Nilai anda: C");
         //         break;
         //     default:
         //         document.write("Nilai anda: D");
         //         break;
         // }
+
+        // document.write("<br>" + "Terim kasih!");
     </script>
 
     <script>
+        // // Ternary Operator
         // let password = prompt("Masukan password: ");
         // let validation = (parseInt(password) === 123) ? "Password Benar" : "Password Salah!";
         // document.write(validation)
     </script>
 
     <script>
-        let role = prompt("Masukkan role Anda (admin/user):");
-        let password = prompt("Masukkan password Anda:");
+// Nested if statement
+let role = prompt("Masukkan role Anda (admin/user):");
 
-        if (password === "12345" || "anggii") {  // Memeriksa apakah password benar
-            // Jika password benar, cek role pengguna
-            if (role === "admin") {
-                document.write("Selamat datang, Admin!");
-            } else if (role === "user") {
-                document.write("Selamat datang, Pengguna!");
-            } else {
-                document.write("Role tidak dikenali.");
-            }
-        } else {
-            // Jika password salah
-            document.write("Password Salah!");
-        }
+if (role === "admin") {  
+    let password = prompt("Masukkan password Anda:");
+    if (password === "anggi" || password === "hello") {     
+        document.write("Selamat datang, Admin!");
+    } else {
+        document.write("Password Salah!");
+    }
+} else if (role === "user") {
+    let password = prompt("Masukkan password Anda:");
+    if (password === "anggi" || password === "hello") {
+        document.write("Selamat datang, Pengguna!");
+    } else {
+        document.write("Password Salah!");
+    }
+} else {
+    document.write("Role tidak dikenali.");
+}
 
     </script>
 
